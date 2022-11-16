@@ -1,7 +1,7 @@
 <?php
+ require '../Controllers/connection/connectiondDb';
 
-try{
-    $conexion = new PDO('mysql:host=localhost:33065;dbname=blog_libros', 'root','');
+    $connectionDb= DBconnection();
     $ver = $conexion->prepare('SELECT * FROM libros');
     $ver->execute();
     $libros = $ver->fetchAll();
@@ -24,10 +24,8 @@ try{
 
 
 }
-}
-catch(PDOException $e){
-echo "Error" . $e->getMessage();
-}
+
+
 
 
 require 'views/contenidoView.php'
