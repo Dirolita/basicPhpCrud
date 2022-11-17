@@ -1,3 +1,4 @@
+
 #mensaje{
     background-color: aqua;
     position:absolute;
@@ -5,21 +6,66 @@
     width: 800px; 
     
 }
+.form-control{
+    font-size: 26px;
+}
 .main-conti{
     margin: 30px auto;
-    background-color: yellow;
+ 
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 500px 1fr;
+}
+.contenido{
+    
 }
 .main-form{
-    background-color: aqua;
-    width: 100%;
+
+    
 }
 .form-insert{
-    background-color: blueviolet;
-    padding: 15px;
-    width: 100%;
+    margin-left: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+    padding: 55px;
+    background-color: rgba(165, 165, 165, 0.418);
+    
 }
 .table-data{
-    background-color: aqua;
+   margin-right: 25px;
+}
+.img{
+    width: 70px;
+}
+.head-table{
+    display: flex;
+    justify-content: space-between;
+}
+th{
+    font-size: 22px;
+}
+td{
+    font-size: 20px;
+}
+.contenedor-login{
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    margin: 150px 50px;
+}
+.label_s{
+    font-size: 20px;
+}
+.asid p{
+    font-size: 20px;
+}
+.asid{
+    padding: 30px 60px;
+    
+    
+}
+.log{
+    background-image: url(../img/5291450.jpg);
+    background-size: cover;
+}
+.frm{
+    padding: 30px;
 }
