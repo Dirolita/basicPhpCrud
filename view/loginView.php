@@ -13,7 +13,11 @@
 
 <body>
     <div class="contenedor">
-        <h1 class="titulo">Inicio de sesión</h1>
+        <h1 class="titulo">"Esta es la aplicación telemática de <br>FERNANDO SERRANO TOVAR"</h1>
+        <h3>La aplicacion es un sistema basico de registro, llevando acabo 
+            las acciones basicas de crear, actualizar y eliminar datos, se ingresa por medio de un formulario de 
+            inicio de sesión
+        </h3>
 
         <!--En el accion quiero despues de enviarlo que se redirija a la misma pagina-->
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="POST" name="login">

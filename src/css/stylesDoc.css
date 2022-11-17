@@ -1,0 +1,25 @@
+#mensaje{
+    background-color: aqua;
+    position:absolute;
+    left: 20%;
+    width: 800px; 
+    
+}
+.main-conti{
+    margin: 30px auto;
+    background-color: yellow;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-form{
+    background-color: aqua;
+    width: 100%;
+}
+.form-insert{
+    background-color: blueviolet;
+    padding: 15px;
+    width: 100%;
+}
+.table-data{
+    background-color: aqua;
+}
