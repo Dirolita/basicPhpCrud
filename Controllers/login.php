@@ -2,7 +2,7 @@
 
 
 if(isset($_SESSION['usuario'])){
-    header('location:index.php');
+    header('location: ../index.php');
 }
 
 if($_SERVER['REQUEST_METHOD']== 'POST'){
@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
 
     if($resultado !== false){
         $_SESSION['usuario']= $usuario;
-        header('Location: index.php');
+        header('Location: ../index.php');
         //echo "DATOS OK";
     }
     else{
@@ -36,6 +36,6 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
     }
 }
 
-require'views/loginView.php';
+require'../view/loginView.php';
 
 ?>

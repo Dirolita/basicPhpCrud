@@ -1,10 +1,10 @@
 <?php session_start();
 
 if(isset($_SESSION['usuario'])){
-    header('location:contenido.php');
+    header('location: Controllers/contenido.php');
 }
 else{
-    header('location: registrate.php');
+    header('location: Controllers/registrate.php');
 }
 
 

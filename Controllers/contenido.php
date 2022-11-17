@@ -2,7 +2,7 @@
  require '../Controllers/connection/connectiondDb';
 
     $connectionDb= DBconnection();
-    $ver = $conexion->prepare('SELECT * FROM libros');
+    $ver = $connectionDb->prepare('SELECT * FROM libros');
     $ver->execute();
     $libros = $ver->fetchAll();
     //print_r($libros);
@@ -14,7 +14,7 @@
     $categoria = $_POST['categoria'];
     $exito = '';
 
-    $insert = $conexion->prepare('INSERT INTO libros (id,nombre,autor,categoria) VALUES (null, :nombre, :autor, :categoria)');
+    $insert = $connectionDb->prepare('INSERT INTO libros (id,nombre,autor,categoria) VALUES (null, :nombre, :autor, :categoria)');
     $insert->execute(array(':nombre'=> $nombre,  ':autor'=> $autor, ':categoria'=> $categoria));
     $addRes = $insert->fetchAll();
 
@@ -28,5 +28,5 @@
 
 
 
-require 'views/contenidoView.php'
+require '../view/contenidoView.php'
 ?>

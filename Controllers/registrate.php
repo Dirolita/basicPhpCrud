@@ -51,5 +51,5 @@ catch(PDOException $e){
 }
 }
 }
-require'views/registrate.view.php';
+require'../view/registrate.view.php';
 ?>
